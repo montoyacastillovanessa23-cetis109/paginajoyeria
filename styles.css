@@ -1,0 +1,50 @@
+body {
+    font-family: Arial;
+    background-color: #fef6fb;
+    text-align: center;
+}
+
+h1 {
+    color: #ff3c7a;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    background-color: #fff0f5;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.item img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.item p {
+    margin-top: 10px;
+    color: #6b7280;
+}
+
+/* Modal (zoom) */
+#modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+#modal img {
+    max-width: 60%;
+    margin-top: 5%;
+}
