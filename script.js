@@ -9,3 +9,25 @@ function abrirModal(img) {
 function cerrarModal() {
     document.getElementById("modal").style.display = "none";
 }
+
+function filtrar(categoria) {
+
+    let items = document.querySelectorAll(".item");
+
+    items.forEach(item => {
+
+        if (categoria == "todo") {
+            item.style.display = "block";
+        }
+
+        else if (item.classList.contains(categoria)) {
+            item.style.display = "block";
+        }
+
+        else {
+            item.style.display = "none";
+        }
+
+    });
+
+}
