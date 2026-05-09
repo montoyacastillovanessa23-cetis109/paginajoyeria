@@ -124,7 +124,7 @@ a:hover {
 @media (max-width: 768px) {
 
     .galeria {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     h1 {
@@ -132,7 +132,7 @@ a:hover {
     }
 
     #modal img {
-        max-width: 95%;
+        max-width: 100%;
     }
 
 }
